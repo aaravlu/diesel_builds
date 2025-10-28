@@ -55,7 +55,7 @@ jobs:
       - name: Build diesel_cli
         working-directory: diesel/diesel_cli
         run: |
-          cargo b -r --no-default-features --features sqlite
+          cargo b -r --no-default-features --features "sqlite-bundled postgres-bundled"
 
       - name: Archive binary
         uses: actions/upload-artifact@v4
