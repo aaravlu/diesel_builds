@@ -56,13 +56,6 @@ jobs:
           toolset: 14.29
           sdk: 10.0.19041.0
 
-      - name: Cargo update
-        working-directory: diesel
-        shell: pwsh
-        run: |
-          Remove-Item Cargo.lock -Force
-          cargo update
-
       - name: Build diesel_cli
         working-directory: diesel_cli
         run: |
