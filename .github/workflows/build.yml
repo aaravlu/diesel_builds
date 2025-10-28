@@ -57,7 +57,7 @@ jobs:
           sdk: 10.0.19041.0
 
       - name: Build diesel_cli
-        working-directory: diesel_cli
+        working-directory: diesel/diesel_cli
         run: |
           cargo b -r
 
