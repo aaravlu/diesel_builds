@@ -44,10 +44,6 @@ jobs:
         with:
           toolchain: stable
 
-      - name: Install clippy
-        run: |
-          rustup component add clippy
-
       - name: Setup MSVC
         if: matrix.os == 'windows-2022'
         uses: ilammy/msvc-dev-cmd@v1
